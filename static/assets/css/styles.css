@@ -1,0 +1,62 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  --bs-primary: #1c3dca;
+  --bs-primary-rgb: 28,61,202;
+  --bs-info: #02aaff;
+  --bs-info-rgb: 2,170,255;
+  --bs-dark: #131416;
+  --bs-dark-rgb: 19,20,22;
+  --bs-body-color: var(--bs-white);
+  --bs-body-bg: var(--bs-gray-800);
+  --bs-body-font-weight: 300;
+}
+
+p, h2, h5, h3 {
+ font-family: 'PlayfairDisplay-Regular', sans-serif;
+}
+.container {
+  height: 100%;
+  max-width: 960px;
+}
+
+.text-badge {
+  padding: .1em .4em;
+  background: var(--bs-dark);
+}
+
+.banner {
+  padding: 2em 1em;
+  text-align: center;
+  background: var(--bs-primary);
+  border-radius: 1em;
+}
+
+.projects {
+  --bs-gutter-y: 1.5rem;
+}
+
+footer {
+  background: var(--bs-gray-900);
+}
+
+
+@font-face {
+font-family: "PlayfairDisplay-Regular";
+src: url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: "Caveat-Regular";
+src: url("../fonts/Caveat-Regular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+
+@font-face {
+font-family: "BadScript-Regular";
+src: url("../fonts/BadScript-Regular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+

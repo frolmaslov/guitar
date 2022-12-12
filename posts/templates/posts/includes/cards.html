@@ -1,0 +1,30 @@
+<div class="card my-5">
+  <div class="card-header text-dark">
+    {{ post.created.date() }}
+  </div>
+    <div class="container text-left">
+  <div class="row">
+    <div class="col">
+  <div class="card-body">
+
+    <h2 class="card-title"><a href="{{ url_for('posts.post_detail', slug=post.slug) }}">{{ post.title }}</a></h2>
+
+    <a href="{{ url_for('posts.post_detail', slug=post.slug) }}" class="btn btn-light">Подробности</a>
+  </div>
+      </div>
+    <div class="col">
+        {% if post.video %}
+      <iframe width="360" height="185" src="{{ post.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+        {% endif %}
+    </div>
+        </div>
+      </div>
+            {% if post.tags.count() %}
+            <div class="card-footer text-muted">
+                {% for tag in post.tags %}
+                    <a href="{{ url_for('posts.tag_detail', slug=tag.slug)}}"><span class="badge text-bg-info">{{ tag.title }}</span></a>
+                {% endfor %}
+            </div>
+            {% endif %}
+</div>

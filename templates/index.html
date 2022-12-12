@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %}
+Главная
+{% endblock %}
+{% block main %}
+
+
+    <header>
+        <div data-bss-parallax-bg="true" style="height: 600px;background-image: url(./static/assets/img/33.jpg);background-position: center;background-size: cover;">
+            <div class="container d-flex flex-column justify-content-end align-items-start">
+                <h1 class="display-3 fw-bold">Ольга Маслова<br></h1>
+                <p class="fs-2 text-info text-badge mb-5">Преподаватель гитары<br></p>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section class="py-4 py-xl-5">
+            <div class="container">
+                <p class="fs-3">Преподаватель по классу гитары с более чем 30-ти летним опытом работы, лауреат и призер конкурсов педагогического мастерства.<br></p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><i class="fa-brands fa-vk fs-1 me-2"></i></li>
+                    <li class="list-inline-item"><i class="fa-brands fa-telegram fs-1 me-2"></i></li>
+                    <li class="list-inline-item"><i class="fa-brands fa-youtube fs-1 me-2"></i></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="py-4 py-xl-5">
+            <div class="container">
+                <div class="banner">
+                    <p class="fs-1">Задать вопрос.<br></p><a href="/contact"><button class="btn btn-dark btn-lg text-uppercase fw-bold" type="button">Связаться&nbsp;<i class="fas fa-chevron-right"></i></button></a>
+                </div>
+            </div>
+        </section>
+        <section class="py-4 py-xl-5">
+            <div class="container">
+                <h2>Немного фото</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 py-5 projects">
+                    <div class="col">
+                        <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/5.jpg"></div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img class="card-img w-100 d-block" style="hi" src="./static/assets/img/5.jpg"></div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/5.jpg"></div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/5.jpg"></div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/5.jpg"></div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/5.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

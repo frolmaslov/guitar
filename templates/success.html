@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+Подтверждение
+{% endblock %}
+{% block main %}
+<div class="container">
+    {% for msg in get_flashed_messages()%}
+    <h1>_____</h1>
+
+   <div class="card w-50 m-5">
+  <div class="card-body">
+    <h5 class="card-title text-primary">Подтверждение</h5>
+    <p class="card-text text-info">{{msg}}</p>
+    <a href="/" class="btn btn-primary">На главную</a>
+  </div>
+</div>
+    {% endfor %}
+
+</div>
+{% endblock %}
+

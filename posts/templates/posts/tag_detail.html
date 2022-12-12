@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Posts with '{{ tag.title }}' tag
+{% endblock %}
+
+
+{% block main %}
+    <div class="container">
+
+        <h1 class="my-5">Публикации с тегом '{{ tag.title }}'</h1>
+    {% for post in tag.posts %}
+        {% include 'posts/includes/cards.html' %}
+    {% endfor %}
+        </div>
+
+{% endblock %}

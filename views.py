@@ -14,6 +14,11 @@ def about():
     return render_template('about.html')
 
 
+@app.route("/gallery")
+def gallery():
+    return render_template('gallery.html')
+
+
 @app.route("/user/<string:name>/<int:id>")
 def user(name, id):
     return f"Hello, {name}! Your ID is {id}."

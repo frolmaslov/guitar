@@ -37,7 +37,7 @@ class AdminView(AdminMixin, ModelView):
     pass
 
 
-class HomeAdminView(AdminMixin,AdminIndexView):
+class HomeAdminView(AdminMixin, AdminIndexView):
     pass
 
 
@@ -86,13 +86,6 @@ def get_locale():
 
 
 
-#
-# class Article(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     title = db.Column(db.String(100), nullable=False)
-#     intro = db.Column(db.String(300), nullable=False)
-#     text = db.Column(db.Text, nullable=False)
-#     date = db.Column(db.DateTime, default=datetime.utcnow)
 
 
 

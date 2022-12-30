@@ -31,8 +31,11 @@ class Post(db.Model):
     slug = db.Column(db.String(140), unique=True)
     body = db.Column(db.Text, nullable=False)
     created = db.Column(db.DateTime, default=datetime.now())
-    video = db.Column(db.String(100))
+    video = db.Column(db.String(150))
     tags = db.relationship('Tag', secondary=posts_tags, backref=db.backref('posts'), lazy='dynamic')
+
+    img_filename = db.Column(db.String())
+    # img_data = db.Column(db.LargeBinary)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

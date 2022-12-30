@@ -1,6 +1,6 @@
 <div class="card my-5">
   <div class="card-header text-dark">
-    {{ post.created.date() }}
+    <h5>{{ post.created.date() }}</h5>
   </div>
     <div class="container text-left">
   <div class="row">
@@ -8,7 +8,7 @@
   <div class="card-body">
 
     <h2 class="card-title"><a href="{{ url_for('posts.post_detail', slug=post.slug) }}">{{ post.title }}</a></h2>
-
+    <h5 class="card-title text-dark my-5">{{ post.body[:20] }}</h5>
     <a href="{{ url_for('posts.post_detail', slug=post.slug) }}" class="btn btn-light">Подробности</a>
   </div>
       </div>
@@ -16,6 +16,8 @@
         {% if post.video %}
       <iframe width="360" height="185" src="{{ post.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </iframe>
+        {% elif post.img_filename %}
+<div class="card"><img class="img-thumbnail" src="{{post.img_filename}}"></div>
         {% endif %}
     </div>
         </div>

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block title %}
+Галерея
+{% endblock %}
+{% block main %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+</head>
+
+<body>
+    <div class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Галерея</h2>
+                <h4 class="text-center"> Ученики </h4>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/1.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/1.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/2.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/2.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/3.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/3.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/4.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/4.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/5.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/5.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/6.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/6.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/7.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/7.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/8.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/8.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/9.png')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/9.png')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/10.png')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/10.png')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/11.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/11.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/12.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/12.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/13.png')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/13.png')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/14.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/14.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/15.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/15.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/16.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/16.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/17.png')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/17.png')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/students/18.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/students/18.jpg')}}"></a></div>
+            </div>
+            <div class="intro">
+                <h4 class="text-center"> Дипломы </h4>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/5-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/5-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/6-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/6-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/7-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/7-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/8-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/8-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/9-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/9-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/10-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/10-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/11-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/11-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/12-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/12-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/1-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/1-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/2-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/2-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/3-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/3-min.jpg')}}"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{{url_for('static', filename = 'assets/img/diploms/4-min.jpg')}}" data-lightbox="photos"><img class="img-fluid" src="{{url_for('static', filename = 'assets/img/diploms/4-min.jpg')}}"></a></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+</body>
+
+
+
+{% endblock %}

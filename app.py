@@ -71,7 +71,7 @@ app.config['SESSION_COOKIE_SECURE'] = False
 mail = Mail()
 mail.init_app(app)
 
-# Flask Security
+#Flask Security
 
 user_datastore = SQLAlchemyUserDatastore(db, User, Role)
 security = Security(app, user_datastore)

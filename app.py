@@ -5,10 +5,9 @@ from flask_admin import Admin, AdminIndexView
 from flask_admin.contrib.sqla import ModelView
 from flask_sqlalchemy import SQLAlchemy
 from flask_security import SQLAlchemyUserDatastore, Security, current_user
-from config import Config
+from config import Config, mail_password, mail_username
 from flask_migrate import Migrate
 from flask_babelex import Babel
-
 
 
 app = Flask(__name__)
@@ -61,12 +60,12 @@ admin = Admin(app, 'Гитара', url='/', index_view=HomeAdminView(name='Home'
 admin.add_view(PostAdminView(Post, db.session))
 admin.add_view(TagAdminView(Tag, db.session))
 
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'frolmaslov@gmail.com'
-app.config['MAIL_PASSWORD'] = 'jonyofpcuovqrtpi'
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_SERVER'] = 'smtp-mail.outlook.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USERNAME'] = mail_username
+app.config['MAIL_PASSWORD'] = mail_password
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
 app.config['SESSION_COOKIE_SECURE'] = False
 
 mail = Mail()

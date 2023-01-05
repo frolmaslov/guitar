@@ -3,8 +3,6 @@
 Главная
 {% endblock %}
 {% block main %}
-
-
     <header>
         <div data-bss-parallax-bg="true" style="height: 600px;background-image: url(./static/assets/img/33.jpg);background-position: center;background-size: cover;">
             <div class="container d-flex flex-column justify-content-end align-items-start">
@@ -19,9 +17,11 @@
             <div class="container">
                 <p class="fs-3">Преподаватель по классу гитары с более чем 30-ти летним опытом работы, лауреат и призер конкурсов педагогического мастерства.<br></p>
                 <ul class="list-inline mb-0">
-                    <li class="list-inline-item"><i class="fa-brands fa-vk fs-1 me-2"></i></li>
-                    <li class="list-inline-item"><i class="fa-brands fa-telegram fs-1 me-2"></i></li>
-                    <li class="list-inline-item"><i class="fa-brands fa-youtube fs-1 me-2"></i></li>
+                    <li class="list-inline-item"><a href="https://vk.com/olga_canzonetta"  target="_blank"><i class="fa-brands fa-vk fs-1 me-2"></i></a></li>
+                    <li class="list-inline-item"><a href="https://ok.ru/profile/538949607238"  target="_blank"><i class="fa-brands fa-square-odnoklassniki fs-1 me-2"></i></a></li>
+
+
+                    <li class="list-inline-item"><a href="https://www.youtube.com/@user-eu1ri4yk9c"  target="_blank"><i class="fa-brands fa-youtube fs-1 me-2"></i></a></li>
                 </ul>
             </div>
         </section>
@@ -29,13 +29,15 @@
         <section class="py-4 py-xl-5">
             <div class="container">
                 <div class="banner">
-                    <p class="fs-1">Задать вопрос.<br></p><a href="/contact"><button class="btn btn-dark btn-lg text-uppercase fw-bold" type="button">Связаться&nbsp;<i class="fas fa-chevron-right"></i></button></a>
+                    <p class="fs-1">Задать вопрос<br></p><a href="/contact"><button class="btn btn-dark btn-lg text-uppercase fw-bold" type="button">Связаться&nbsp;<i class="fas fa-chevron-right"></i></button></a>
                 </div>
             </div>
         </section>
         <section class="py-4 py-xl-5">
             <div class="container">
-                <h2>Немного фото</h2>
+
+          <a class="nav-link" href="/gallery"><h2>Немного фото</h2></a>
+        
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 py-5 projects">
                     <div class="col">
                         <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/students/4.jpg"></div>

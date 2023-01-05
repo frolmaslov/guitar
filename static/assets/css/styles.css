@@ -21,18 +21,24 @@ p, h2, h5, h3 {
 
 .photo-gallery {
   color:#313437;
-  background-color:gray;
+  background-color:#333;
 }
 
 .photo-gallery p {
-  color:#7d8285;
+  color:#d0d3d5;
 }
+
+nav{
+  background-color: #d0d3d5;}
+
+.fas fa-heart{
+color:red;}
 
 .photo-gallery h2 {
   font-weight:bold;
   margin-bottom:40px;
   padding-top:40px;
-  color:inherit;
+  color:white;
 }
 
 @media (max-width:767px) {
@@ -61,7 +67,8 @@ p, h2, h5, h3 {
   padding-bottom:30px;
 }
 
-
+h4.text-center{
+color:white;}
 
 .text-badge {
   padding: .1em .4em;
@@ -81,6 +88,7 @@ p, h2, h5, h3 {
 
 footer {
   background: var(--bs-gray-900);
+  color:white;
 }
 
 

@@ -2,6 +2,7 @@ from app import app, mail
 from flask import Flask, render_template, url_for, request, redirect, g, session, flash
 from form_contact import ContactForm, csrf
 from flask_mail import Mail, Message
+from config import mail_username
 
 
 @app.route("/")
@@ -41,9 +42,9 @@ def success():
 
 
 def send_message(message):
-    text = 'Спасибо. Мы получили ваше письмо. Сообщение: ' + message.get('message') + '\n\nОт кого: ' + message.get('name') + '\nEmail: ' + message.get('email')
-    msg = Message(message.get('subject'), sender=message.get('email'),
-            recipients=['frolmaslov@gmail.com', message.get('email')],
+    text = 'Спасибо. Мы получили ваше письмо.\n\nТекст сообщения:\n' + message.get('message') + '\n\nОт кого: ' + message.get('name') + '\nEmail: ' + message.get('email')
+    msg = Message(message.get('subject'), sender=mail_username,
+            recipients=['canzonetta@mail.ru', message.get('email')],
             body=text
     )
     mail.send(msg)

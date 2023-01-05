@@ -66,8 +66,6 @@ class Tag(db.Model):
         else:
             self.slug = str(int(time()))
 
-
-
     def __repr__(self):
         return f'<Tag id: {self.id}, title: {self.title}>'
 

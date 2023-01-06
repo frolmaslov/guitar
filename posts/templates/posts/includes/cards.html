@@ -14,7 +14,7 @@
       </div>
     <div class="col">
         {% if post.video %}
-      <iframe width="360" height="185" src="{{ post.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe itemprop="subjectOf" itemscope itemtype="https://schema.org/VideoObject" width="360" height="185" src="{{ post.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </iframe>
         {% elif post.img_filename %}
 <div class="card"><img class="img-thumbnail" src="{{post.img_filename}}"></div>

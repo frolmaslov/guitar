@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% block title %}
-Главная
+ Уроки игры на гитаре онлайн
 {% endblock %}
 {% block main %}
     <header>
-        <div data-bss-parallax-bg="true" style="height: 600px;background-image: url(./static/assets/img/33.jpg);background-position: center;background-size: cover;">
-            <div class="container d-flex flex-column justify-content-end align-items-start">
-                <h1 class="display-3 fw-bold">Ольга Маслова<br></h1>
-                <p class="fs-2 text-info text-badge mb-5">Преподаватель гитары<br></p>
+        <div  itemscope itemtype="https://schema.org/CreativeWork" data-bss-parallax-bg="true" style="height: 600px;background-image: url(./static/assets/img/33.jpg);background-position: center;background-size: cover;">
+            <div  class="container d-flex flex-column justify-content-end align-items-start">
+                <h1 itemprop="name" class="display-3 fw-bold">Ольга Маслова<br></h1>
+                <p class="fs-2 text-info text-badge mb-5"><span itemprop="educationalRole">Преподаватель</span> гитары<br></p>
             </div>
         </div>
     </header>
@@ -15,13 +15,13 @@
 
         <section class="py-4 py-xl-5">
             <div class="container">
-                <p class="fs-3">Преподаватель по классу гитары с более чем 30-ти летним опытом работы, лауреат и призер конкурсов педагогического мастерства.<br></p>
+                <p itemprop="audience" itemscope itemtype="https://schema.org/EducationalAudience" class="fs-3"><span itemprop="educationalRole">Преподаватель по классу гитары</span> с более чем 30-ти летним опытом работы, лауреат и призер конкурсов педагогического мастерства.<br></p>
                 <ul class="list-inline mb-0">
-                    <li class="list-inline-item"><a href="https://vk.com/olga_canzonetta"  target="_blank"><i class="fa-brands fa-vk fs-1 me-2"></i></a></li>
-                    <li class="list-inline-item"><a href="https://ok.ru/profile/538949607238"  target="_blank"><i class="fa-brands fa-square-odnoklassniki fs-1 me-2"></i></a></li>
+                    <li itemprop="url"  class="list-inline-item"><a href="https://vk.com/olga_canzonetta"  target="_blank"><i class="fa-brands fa-vk fs-1 me-2"></i></a></li>
+                    <li itemprop="url" class="list-inline-item"><a href="https://ok.ru/profile/538949607238"  target="_blank"><i class="fa-brands fa-square-odnoklassniki fs-1 me-2"></i></a></li>
 
 
-                    <li class="list-inline-item"><a href="https://www.youtube.com/@user-eu1ri4yk9c"  target="_blank"><i class="fa-brands fa-youtube fs-1 me-2"></i></a></li>
+                    <li itemprop="url"  class="list-inline-item"><a href="https://www.youtube.com/@user-eu1ri4yk9c"  target="_blank"><i class="fa-brands fa-youtube fs-1 me-2"></i></a></li>
                 </ul>
             </div>
         </section>
@@ -34,28 +34,28 @@
             </div>
         </section>
         <section class="py-4 py-xl-5">
-            <div class="container">
+            <div class="container" itemscope itemtype="https://schema.org/ImageObject">
 
-          <a class="nav-link" href="/gallery"><h2>Немного фото</h2></a>
+          <a class="nav-link" href="/gallery"><h2 itemprop="name">Немного фото</h2></a>
         
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 py-5 projects">
                     <div class="col">
-                        <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/students/4.jpg"></div>
+                        <div class="card"><img itemprop="contentUrl" class="card-img w-100 d-block" src="./static/assets/img/students/4.jpg"></div>
                     </div>
                     <div class="col">
-                        <div class="card"><img class="card-img w-100 d-block" style="hi" src="./static/assets/img/students/5.jpg"></div>
+                        <div class="card"><img itemprop="contentUrl" class="card-img w-100 d-block" style="hi" src="./static/assets/img/students/5.jpg"></div>
                     </div>
                     <div class="col">
-                        <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/students/3.jpg"></div>
+                        <div class="card"><img itemprop="contentUrl" class="card-img w-100 d-block" src="./static/assets/img/students/3.jpg"></div>
                     </div>
                     <div class="col">
-                        <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/students/2.jpg"></div>
+                        <div class="card"><img itemprop="contentUrl" class="card-img w-100 d-block" src="./static/assets/img/students/2.jpg"></div>
                     </div>
                     <div class="col">
-                        <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/students/1.jpg"></div>
+                        <div class="card"><img itemprop="contentUrl" class="card-img w-100 d-block" src="./static/assets/img/students/1.jpg"></div>
                     </div>
                     <div class="col">
-                        <div class="card"><img class="card-img w-100 d-block" src="./static/assets/img/students/6.jpg"></div>
+                        <div class="card"><img itemprop="contentUrl" class="card-img w-100 d-block" src="./static/assets/img/students/6.jpg"></div>
                     </div>
                 </div>
             </div>

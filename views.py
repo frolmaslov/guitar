@@ -41,6 +41,16 @@ def success():
     return render_template('success.html')
 
 
+@app.route('/robots.txt')
+def robots():
+    return 'User-agent: *\nAllow: /\n https://olgamaslova.onrender.com/contact/sitemap.xml'
+
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return render_template('sitemap.xml')
+
+
 def send_message(message):
     text = 'Спасибо. Мы получили ваше письмо.\n\nТекст сообщения:\n' + message.get('message') + '\n\nОт кого: ' + message.get('name') + '\nEmail: ' + message.get('email')
     msg = Message(message.get('subject'), sender=mail_username,

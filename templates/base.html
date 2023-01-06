@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="Провожу онлайн уроки игры на гитаре">
+    <meta name="keywords" content="уроки гитары, уроки игры на гитаре, гитара с нуля уроки, музыкальная школа, как научиться играть на гитаре, онлайн уроки">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for('static', filename = 'assets/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800&amp;display=swap">
@@ -14,6 +16,7 @@
 
 
     <script src="https://kit.fontawesome.com/e4299f24a1.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -51,28 +54,28 @@
     </div>
   </div>
 </nav>
-
+<!-- Уроки гитары -->
 
 
 {% block main %}{% endblock %}
 
 
     <footer class="mt-5 py-2">
-        <div class="container">
+        <div itemscope itemtype="https://schema.org/CreativeWork" class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start d-md-flex justify-content-md-start align-items-md-center py-2">
                     <div>
-                        <p class="fs-5 fw-bold mb-0">Маслова Ольга<br></p>
-                        <p class="mb-0">С <i class="fas fa-heart" style="color:red;"></i> из Калининграда<br></p>
+                        <p itemprop="name" class="fs-5 fw-bold mb-0">Маслова Ольга<br></p>
+                        <p class="mb-0">С <i class="fas fa-heart" style="color:red;"></i> из <span>Калининград</span>а<br></p>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center align-items-center justify-content-md-end py-2">
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="https://vk.com/olga_canzonetta"  target="_blank"><i class="fa-brands fa-vk fs-1 me-2"></i></a></li>
-                    <li class="list-inline-item"><a href="https://ok.ru/profile/538949607238"  target="_blank"><i class="fa-brands fa-square-odnoklassniki fs-1 me-2"></i></a></li>
+                        <li itemprop="url"  class="list-inline-item"><a href="https://vk.com/olga_canzonetta"  target="_blank"><i class="fa-brands fa-vk fs-1 me-2"></i></a></li>
+                    <li itemprop="url"  class="list-inline-item"><a href="https://ok.ru/profile/538949607238"  target="_blank"><i class="fa-brands fa-square-odnoklassniki fs-1 me-2"></i></a></li>
 
 
-                    <li class="list-inline-item"><a href="https://www.youtube.com/@user-eu1ri4yk9c"  target="_blank"><i class="fa-brands fa-youtube fs-1 me-2"></i></a></li>
+                    <li itemprop="url"  class="list-inline-item"><a href="https://www.youtube.com/@user-eu1ri4yk9c"  target="_blank"><i class="fa-brands fa-youtube fs-1 me-2"></i></a></li>
                     </ul>
                 </div>
             </div>

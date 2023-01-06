@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Галерея
+Новости, статьи, видео
 {% endblock %}
 
 {% block nav %}
@@ -10,7 +10,7 @@
 
 {% block main %}
 <div class="col-8 mx-auto">
-<h1 class="pt-4">Галерея</h1>
+<h1 class="pt-4">Новости, полезные статьи</h1>
     <h1>{% for post in pages.items %}
         {% include 'posts/includes/cards.html' %}
         {% endfor %}

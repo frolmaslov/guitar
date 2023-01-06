@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+https://olgamaslova.onrender.com/contact/sitemap.xml

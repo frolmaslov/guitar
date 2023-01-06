@@ -71,6 +71,7 @@ app.config['SESSION_COOKIE_SECURE'] = False
 mail = Mail()
 mail.init_app(app)
 
+
 #Flask Security
 
 user_datastore = SQLAlchemyUserDatastore(db, User, Role)
@@ -82,6 +83,9 @@ def get_locale():
     if request.args.get('lang'):
         session['lang'] = request.args.get('lang')
     return session.get('lang', 'ru')
+
+
+
 
 
 

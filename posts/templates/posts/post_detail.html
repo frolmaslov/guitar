@@ -14,9 +14,9 @@
 </iframe>
         {% endif %}
     {% if post.img_filename %}
-      <div class="card"><img class="card-img w-75 d-block" src="{{post.img_filename}}"></div>
-                    </div>
+      <div class="card"><img class="card-img w-100 d-block" src="{{post.img_filename}}"></div>
+
         {% endif %}
-<h3 style="color:white">{{post.body}}</h3>
+<h3 class="my-5" style="color:white">{{post.body}}</h3>
 </div>
 {% endblock %}

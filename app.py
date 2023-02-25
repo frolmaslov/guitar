@@ -85,11 +85,11 @@ def get_locale():
     return session.get('lang', 'ru')
 
 
-@app.before_request
-def fix_missing_csrf_token():
-    if app.config['WTF_CSRF_FIELD_NAME'] not in session:
-        if app.config['WTF_CSRF_FIELD_NAME'] in g:
-            g.pop(app.config['WTF_CSRF_FIELD_NAME'])
+# @app.before_request
+# def fix_missing_csrf_token():
+#     if app.config['WTF_CSRF_FIELD_NAME'] not in session:
+#         if app.config['WTF_CSRF_FIELD_NAME'] in g:
+#             g.pop(app.config['WTF_CSRF_FIELD_NAME'])
 
 
 

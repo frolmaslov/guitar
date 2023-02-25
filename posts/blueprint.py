@@ -21,7 +21,7 @@ def posts_list():
     else:
         page = 1
 
-    pages = posts.paginate(page=page, per_page=5)
+    pages = posts.paginate(page=page, per_page=10)
 
     return render_template('posts/posts.html', posts=posts, pages=pages)
 

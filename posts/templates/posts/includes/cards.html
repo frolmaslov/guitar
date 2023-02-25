@@ -8,7 +8,7 @@
   <div class="card-body">
 
     <h2 class="card-title"><a href="{{ url_for('posts.post_detail', slug=post.slug) }}">{{ post.title }}</a></h2>
-    <h5 class="card-title text-dark my-5">{{ post.body[:20] }}</h5>
+
     <a href="{{ url_for('posts.post_detail', slug=post.slug) }}" class="btn btn-light">Подробности</a>
   </div>
       </div>

@@ -3,7 +3,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath('__name__'))
 SECRET_KEY_OS = os.urandom(32)
 mail_username = 'maslova.guitar@outlook.com'
-mail_password ='Vilgelmina-56'
+mail_password = password
 
 
 class Config:
